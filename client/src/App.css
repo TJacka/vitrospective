@@ -10,25 +10,7 @@ body {
   font-size: 16px;
   background: rgb(170,210,230);
   background: linear-gradient(90deg, rgba(170,210,230,1) 0%, rgba(240,240,240,1) 100%);
-  object-fit: fill;
-  background-size: cover;
-  background-position: top left;
-  background-attachment: calc(50vw);
-  background-attachment:fixed;
-}
-
-button {
-  padding: 16px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16px;
-  background-color: black;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-h3, h4 {
-  margin-bottom: 0;
+  width: 100vw;
 }
 
 nav {
@@ -37,7 +19,7 @@ nav {
   text-align: center;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background: transparent;
   font-size: 2rem;
 }
@@ -65,22 +47,77 @@ nav a:hover {
   color: rgb(0, 96, 0);
 }
 
-#page-body {
+.nav-mobile-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.logo {
+  font-size: 1.7rem;
+  padding: 0 -5px;
+}
+
+.page-body {
   padding-top: 10vh;
   display: flex;
   justify-content: end;
-
+  width: 100vw;
 }
 
-.article-list-item {
-  text-decoration: none;
-  color: black;
-  padding: 16px 0 0 0;
+.hero-container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 100vh;
+  margin-top: -20px;
 }
 
-.article-list-item p {
-  padding-bottom: 32px;
-  border-bottom: 2px solid black;
+.hero-h1 {
+  font-size: 4rem;
+  color: rgb(180, 60, 30);
+  line-height: 4rem;
+  text-align: center;
+  letter-spacing: -0.2rem;
+  margin-bottom: 0;
+}
+
+.hero-sub {
+  font-family: 'Poppins';
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(0, 96, 0);
+  letter-spacing: -0.05rem;
+}
+
+.hero-btn {
+  padding: 12px 24px;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  background-color: rgb(0, 96, 0);
+  color: rgb(250, 240, 170);
+  cursor: pointer;
+  border: none;
+  width: 10rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-img img {
+  margin: 0 auto;
+  width: auto;
+  height: 50vh;
+  margin-bottom: 5rem;
 }
 
 #add-comment-form {
@@ -147,54 +184,6 @@ footer p {
   margin: 0px 10px -25px;
 }
 
-.hero-container {
-  display: flex;
-}
-
-.hero-h1 {
-  font-size: 10rem;
-  color: rgb(180, 60, 30);
-  line-height: 9rem;
-  width: 400px;
-  text-align: right;
-  margin-bottom: 0;
-  letter-spacing: -0.2rem;
-}
-
-.hero-sub {
-  font-family: 'Poppins';
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: right;
-  margin-bottom: 30px;
-  color: rgb(0, 96, 0);
-  letter-spacing: -0.05rem;
-}
-
-.hero-btn {
-  padding: 12px 24px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 16px;
-  background-color: rgb(0, 96, 0);
-  color: rgb(250, 240, 170);
-  cursor: pointer;
-  border: none;
-  width: 10rem;
-}
-
-.hero {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  margin-right: 10rem;
-}
-
-.hero-img {
-  width: 35vw;
-}
-
 .about-h1 {
   font-size:6rem;
   color: rgb(180, 60, 30);
@@ -240,3 +229,68 @@ footer p {
   width: 20vw;
   margin-bottom: -10px;
 }
+
+.nav-lg {
+  display: none;
+}
+
+@media all and (max-width: 575) {
+
+}
+
+@media all and (min-width: 576) and (max-width: 767) {
+  
+}
+
+@media all and (min-width: 768) and (max-width: 991) {
+  
+}
+
+@media all and (min-width: 992) and (max-width: 1199) {
+  .hero-container {
+    display: flex;
+  }
+  
+  .hero-h1 {
+    font-size: 10rem;
+    color: rgb(180, 60, 30);
+    line-height: 9rem;
+    width: 400px;
+    text-align: right;
+    margin-bottom: 0;
+    letter-spacing: -0.2rem;
+  }
+  
+  .hero-sub {
+    font-family: 'Poppins';
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: right;
+    margin-bottom: 30px;
+    color: rgb(0, 96, 0);
+    letter-spacing: -0.05rem;
+  }
+  
+  .hero-btn {
+    padding: 12px 24px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    background-color: rgb(0, 96, 0);
+    color: rgb(250, 240, 170);
+    cursor: pointer;
+    border: none;
+    width: 10rem;
+  }
+}
+
+@media all and (min-width: 1200) and (max-width: 1399) {
+  
+}
+
+@media all and (min-width: 1400) {
+  
+}
+
+
