@@ -1,15 +1,15 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import NavBar from './components/Navbar'
+import Navbar from './components/Navbar'
 import NavbarMobile from './components/NavbarMobile'
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import About from './pages/About';
-import AccessoryPage from './pages/AccessoryPage';
-import AccessoriesListPage from './pages/AccessoriesListPage';
+import SingleBeadPage from './pages/SingleBeadPage';
+import SingleBeadsListPage from './pages/SingleBeadsListPage';
 import Cart from './pages/Cart';
-import TreesListPage from './pages/TreesListPage';
-import TreePage from './pages/TreePage';
+import JewelryListPage from './pages/JewelryListPage';
+import JewelryPage from './pages/JewelryPage';
 import Profile from './components/Profile'
 import NotFoundPage from './pages/NotFoundPage';
 
@@ -17,20 +17,20 @@ function App() {
   return (
     <BrowserRouter>
       <div className='App'>
-        <div className="nav-lg">
-          <NavBar />
+        <div className='nav-lg'>
+          <Navbar />
         </div>
         <div className='nav-sm'>
-          <NavbarMobile />
+          <NavbarMobile /> 
         </div>
         <div className='page-body'>
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/about' element={<About />} />
-            <Route path='/trees' element={<TreesListPage />} />
-            <Route path='/trees/:treeId' element={<TreePage />} />
-            <Route path='/accessories' element={<AccessoriesListPage />} />
-            <Route path='/accessories/:accessoryId' element={<AccessoryPage />} />
+            <Route path='/jewelry' element={<JewelryListPage />} />
+            <Route path='/jewelry/:pieceId' element={<JewelryPage />} />
+            <Route path='/singlebeads' element={<SingleBeadsListPage />} />
+            <Route path='/singlebeads/:beadId' element={<SingleBeadPage />} />
             <Route path='/cart' element={<Cart />} />
             <Route path='/signup' element={<Profile />} />
             <Route path='*' element={<NotFoundPage />} />

@@ -4,48 +4,48 @@ import { db, connectToDb } from './db.js';
 const app = express();
 app.use(express.json());
 
-app.get('/api/trees/:name', async (req, res) => {
+app.get('/api/jewelry/:name', async (req, res) => {
 	const { name } = req.params
 
-	const tree = await db.collection('trees').findOne({ name });
+	const piece = await db.collection('jewelry').findOne({ name });
 
-	if (tree) {
-		res.json(tree)
+	if (piece) {
+		res.json(piece)
 	} else {
 		res.sendStatus(404);
 	}
 });
 
-app.put('/api/trees/:name/upvote', async (req, res) => {
+app.put('/api/jewelry/:name/upvote', async (req, res) => {
 	const { name } = req.params;
 	
-	await db.collection('trees').updateOne({ name }, {
+	await db.collection('jewelry').updateOne({ name }, {
 		$inc: { upvotes: 1 },
 	});
 
-	const tree = await db.collection('trees').findOne({ name });
+	const tree = await db.collection('jewelry').findOne({ name });
 
 	if (tree) {
-		res.send(`The ${name} tree now has ${tree.upvotes} upvotes!!!`);	
+		res.send(`The ${name} piece now has ${piece.upvotes} upvotes!!!`);	
 	} else {
 		res.send('That tree doesn\'t exist')
 	}
 });
 
-app.post('/api/trees/:name/comments', async (req, res) => {
+app.post('/api/jewelry/:name/comments', async (req, res) => {
 	const { name } = req.params;
 	const { postedBy, text } = req.body;
 
-	await db.collection('trees').updateOne({ name }, {
+	await db.collection('jewelry').updateOne({ name }, {
 		$push: { comments: { postedBy, text }}		
 	});
 
-	const tree = await db.collection('trees').findOne({ name })
+	const tree = await db.collection('jewelry').findOne({ name })
 
-	if (tree) {
-		res.send(tree.comments)
+	if (piece) {
+		res.send(piece.comments)
 	} else {
-		res.send('That tree doesn\'t exist');
+		res.send('That piece doesn\'t exist');
 	}
 }); 
 

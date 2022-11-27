@@ -1,21 +1,24 @@
 import { Link } from 'react-router-dom'
-import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { FaTree, FaHome } from 'react-icons/fa';
+import { AiOutlineMenu } from 'react-icons/ai'
 
 const NavbarMobile = () => {
-  return (
-	<nav className='nav-mobile'>
-		<ul className='nav-mobile-ul'>
-			<li className='logo'>
-				<Link to='/'><FaHome /></Link>
-			</li>
-			<li>
-				<Link to='/store'><FaTree /></Link>
-			</li>
-			<li>
-				<Link to='/cart'><AiOutlineShoppingCart /></Link>
-			</li>
-		</ul>
+
+return (
+	<nav class="nav-mobile navbar" style={{ boxShadow: "0 0 30px silver" }} aria-label="Vitrospective navbar">
+		<div class="container-fluid mx-5-lg smallreverse">
+			<Link to='/' className="nav-logo">Vitrospective</Link>
+		  	<AiOutlineMenu className='nav-burger' />
+		  	<div class="collapse nav-mobile-dropdown justify-content-md-center" id="navbarsExample10">
+				<ul class="navbar-nav">
+			  		<li><Link to='/about'>About</Link></li>
+			  		<li><Link to='/beads'>Beads</Link></li>
+			  		<li><Link to='/jewelry'>Jewelry</Link></li>
+			  		<li><Link to='/contact'>Contact</Link></li>
+			  		<li><Link to='/cart'>Cart</Link></li>
+			  		<li><Link to='/signup'>Signup</Link></li>
+				</ul>
+		  	</div>
+		</div>
 	</nav>
   )
 }

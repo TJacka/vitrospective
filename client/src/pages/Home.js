@@ -3,13 +3,13 @@ import IMG1 from '../images/herotree.png'
 const HomePage = () => {
   return (
       <div className='hero-container'>
-        <div className='hero-img'>
-          <img src={IMG1} alt="" width="100%"/>
-        </div>
-        <div className='hero'>
-          <h1 className='hero-h1'>Out of Time</h1>
-          <h4 className='hero-sub'>Doorstep Delivery Christmas Trees</h4>
-          <button className='hero-btn'>Order Now</button>
+        <div class="py-5 mt-4">
+		      <h1 className='hero-h1'>Artisan Glass Beads & Jewelry</h1>
+	        <h6 className="hero-sub">Exquisite unique pieces handmade from Italian Murano glass.</h6>
+	      </div>
+        <div className="hero-btns">
+          <button className='hero-btn'>Shop Beads</button>
+          <button className='hero-btn'>Shop Jewelry</button>
         </div>
       </div>
   )

@@ -2,32 +2,25 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-	<nav>
-		<ul>
-			<li >
-				<Link to='/'>Home</Link>
-			</li>
-			<li>
-				<Link to='/about'>About</Link>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<Link to='/trees'>Trees</Link>
-			</li>
-			<li>
-				<Link to='/accessories'>Accessories</Link>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<Link to='/cart'>Cart</Link>
-			</li>
-			<li>
-				<Link to='/cart'>SignUp</Link>
-			</li>
-		</ul>
-	</nav>
+	<nav class="navbar navbar-expand-lg" style={{ boxShadow: "0 0 30px silver" }} aria-label="Vitrospective navbar">
+		<div class="container-fluid mx-5-lg smallreverse">
+		  <div>
+		  	<Link to='/' className="nav-logo">Vitrospective</Link>
+		  </div>
+		  <div class="">
+			<ul class="navbar-nav">
+			  <li><Link class="navbar-li" to='/about'>About</Link></li>
+			  <li><Link class="navbar-li" to='/beads'>Beads</Link></li>
+			  <li><Link class="navbar-li" to='/jewelry'>Jewelry</Link></li>
+			  <li><Link class="navbar-li" to='/contact'>Contact</Link></li>
+			</ul>
+		  </div>
+		  <div class="navbar-nav">
+			<Link class="navbar-li" to='/cart'>Cart</Link>
+			<Link class="navbar-li" to='/signup'>Signup</Link>
+		  </div>
+		</div>
+	  </nav>
   )
 }
 

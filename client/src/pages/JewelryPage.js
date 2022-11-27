@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import NotFoundPage from './NotFoundPage';
-import trees from '../components/TreeDetails'
+import trees from '../components/JewelryDetails'
 
 const TreePage = () => {
   const [treeInfo, setTreeInfo] = useState({ upvotes: 0, comments: []});
