@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Niconne:wght@400;700&family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 body {
   font-family: 'Niconne', serif;
@@ -8,15 +8,22 @@ body {
 }
 
 .page-body {
-  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #root {
   height: 100vh;
 }
 
-.App {
+.app {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-between;
 }
 
 .navbar {
@@ -69,7 +76,7 @@ body {
 }
 
 .hero-sub {
-  font-family: 'Poppins';
+  font-family: 'Roboto';
   font-size: 1.3rem;
   font-weight: 500;
   text-align: left;
@@ -79,9 +86,13 @@ body {
 
 .hero-btn {
   padding: 12px 20px 11px;
-  margin: 0 5px;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 10px;
+  margin: 0 10px;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 30px;
+  border-top-style: 1px solid black;
+  border-right-style: 1px solid silver;
+  border-bottom-style: 1px solid black;
+  border-left-style: 1px solid silver;
   font-weight: 700;
   font-size: 16px;
   background-color: rgb(95, 95, 95);
@@ -92,7 +103,7 @@ body {
 .hero-btns {
   display: flex;
   align-items: center;
-  margin: -50px auto 30px 2vw;
+  margin: 0px auto 30px;
 }
 
 .hero {
@@ -106,6 +117,50 @@ body {
   width: auto;
   height: 50vh;
   margin-bottom: 5rem;
+}
+
+.hero-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.btn-primary {
+  font-weight: 700;
+  margin: 0 0 0 -10px;
+  width: 70px;
+  border-radius: 8px;
+}
+
+.btn-success {
+  font-weight: 700;
+  margin: 0 -10px 0 0;
+  padding: 6px 10px;
+  border-radius: 8px;
+}
+
+.product-card {
+  font-family: 'Roboto', sans-serif;
+  width: 220px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: 0 0 20px silver;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.modal {
+  font-family: 'Roboto', san-serif;
+}
+
+.modal-content {
+  border-radius: 10px;
 }
 
 .contact-btn {
@@ -149,6 +204,28 @@ input, textarea {
   right: 8px;
 }
 
+.category-container h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  margin: -10px 0 10px;
+}
+
+.card-price {
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: baseline;
+  justify-content: space-between;
+  font-weight: 700;
+  width: 80%;
+}
+
+
+
 .about-h1 {
   font-size:6rem;
   line-height: 7rem;
@@ -162,13 +239,18 @@ input, textarea {
   margin-bottom: 3rem;
 } 
 
-.about-paragraph {
+.about-details {
   text-align: center;
-  font-family: 'Poppins';
-  font-size: 1rem;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+  line-height: 3rem;
   font-weight: 400;
-  margin-bottom: 30px;
-  max-width: 60%;
+  padding-right: 30px;
+}
+
+.about-heading {
+  font-family: 'Niconne', serif;
+  font-size: 3.5rem;
 }
 
 .about-hero {
@@ -183,6 +265,81 @@ input, textarea {
   margin-bottom: -10px;
 }
 
+.about-container {
+  width: 80vw;
+}
+
+.product-container {
+  width: 90vw;
+  margin: 100px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-category {
+  display: block;
+  width: 80vw;
+}
+
+.product-category a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+}
+
+.product-category h4 {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 15px 0 0px;
+}
+
+.beads-container {
+  margin: 30px auto;
+}
+
+footer {
+  background-color: silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Roboto';
+  font-size: 0.8rem;
+  width: 100vw;
+}
+
+.copyrightcopy {
+  margin: 10px auto;
+}
+
+.contact-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.contact-description {
+  text-align: center;
+}
+
+.contact-details {
+  font-family: 'Roboto', serif;
+  font-size: 1.2rem;
+}
+
+.mapframe {
+  width: 80vw;
+  height: 40vh;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
 @media all and (min-width: 576px) and (max-width: 767px) {
   .hero-h1 {
     font-size: 6rem;
@@ -193,30 +350,23 @@ input, textarea {
   }
   
   .hero-sub {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
     margin: 30px 50px;
     letter-spacing: -0.05rem;
   }
-  
+
   .hero-btn {
-    padding: 12px 20px 11px;
-    margin: 0 15px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    background-color: rgb(95, 95, 95);
-    color: white;
-    cursor: pointer;
+    min-width: 150px;
   }
 
   .hero-btns {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px auto 30px;
   }
 }
 
@@ -246,30 +396,23 @@ input, textarea {
   }
   
   .hero-sub {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
     margin: -10px auto 30px;
     letter-spacing: -0.05rem;
   }
-  
+
   .hero-btn {
-    padding: 12px 20px 11px;
-    margin: 0 15px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    background-color: rgb(95, 95, 95);
-    color: white;
-    cursor: pointer;
+    min-width: 150px;
   }
 
   .hero-btns {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px auto 30px;
   }
 }
 
@@ -299,30 +442,23 @@ input, textarea {
   }
   
   .hero-sub {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
     margin: -10px auto 30px;
     letter-spacing: -0.05rem;
   }
-  
+
   .hero-btn {
-    padding: 12px 20px 11px;
-    margin: 0 15px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    background-color: rgb(95, 95, 95);
-    color: white;
-    cursor: pointer;
+    min-width: 150px;
   }
 
   .hero-btns {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px auto 30px;
   }
 }
 
@@ -352,30 +488,29 @@ input, textarea {
   }
   
   .hero-sub {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-size: 1.4rem;
     font-weight: 500;
     text-align: center;
     margin: -10px auto 30px;
     letter-spacing: -0.05rem;
   }
-  
+
   .hero-btn {
-    padding: 12px 20px 11px;
-    margin: 0 15px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    background-color: rgb(95, 95, 95);
-    color: white;
-    cursor: pointer;
+    min-width: 150px;
   }
 
   .hero-btns {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px auto 30px;
+  }
+
+  .product-category {
+    display: flex;
+    justify-content: space-between; 
+    width: 80vw;
   }
 }
 
@@ -406,30 +541,39 @@ input, textarea {
   }
   
   .hero-sub {
-    font-family: 'Poppins';
+    font-family: 'Roboto';
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
     margin: -10px auto 30px;
     letter-spacing: -0.05rem;
   }
-  
+
   .hero-btn {
-    padding: 12px 20px 11px;
-    margin: 0 15px;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 10px;
-    font-weight: 700;
-    font-size: 16px;
-    background-color: rgb(95, 95, 95);
-    color: white;
-    cursor: pointer;
+    min-width: 150px;
   }
 
   .hero-btns {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0px auto 30px;
+  }
+
+  .about-container {
+    margin-left: -150px;
+  }
+
+  .product-category {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .category-container {
+    margin-top: 30px;
+    width: 80vw;
   }
 }
 

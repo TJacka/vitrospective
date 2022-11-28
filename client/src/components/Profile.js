@@ -1,9 +1,9 @@
-import React from 'react'
-
-const Profile = () => {
+const Cart = () => {
   return (
-	<div>Profile</div>
+	<div>
+    <h1 className='about-h1'>Profile</h1>
+  </div>
   )
 }
 
-export default Profile
+export default Cart
