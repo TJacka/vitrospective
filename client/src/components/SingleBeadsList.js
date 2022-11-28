@@ -1,7 +1,6 @@
-import { Link } from 'react-router-dom'
 import ProductCard from '../components/ProductCard'
 
-const SingleBeadsList = ({ singlebeads }) => {
+const SingleBeadsList = ({ singlebeadswirl, singlebeadfloral, singlebeadpendant }) => {
   return (
     <div className="beads-container">
       <h1>Single Beads</h1>
@@ -9,7 +8,7 @@ const SingleBeadsList = ({ singlebeads }) => {
         <h3>Swirls</h3>
         <hr/>
         <div className="product-category">
-          {singlebeads.map(bead => (
+          {singlebeadswirl.map(bead => (
               <ProductCard className="product" key={bead.name} bead={bead} />
           ))}
         </div>
@@ -18,7 +17,7 @@ const SingleBeadsList = ({ singlebeads }) => {
         <h3>Florals</h3>
         <hr/>
         <div className="product-category">
-          {singlebeads.map(bead => (
+          {singlebeadfloral.map(bead => (
               <ProductCard bead={bead} />            
           ))}
         </div>
@@ -27,10 +26,8 @@ const SingleBeadsList = ({ singlebeads }) => {
         <h3>Pendants</h3>
         <hr/>
         <div className="product-category">
-          {singlebeads.map(bead => (
-            <Link key={bead.name} to={`/jewelry/${bead.name}`} >
+          {singlebeadpendant.map(bead => (
               <ProductCard bead={bead} />
-            </Link>                
           ))}
         </div>
 			</div>

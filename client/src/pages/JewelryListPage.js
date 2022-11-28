@@ -1,10 +1,14 @@
 import JewelryList from '../components/JewelryList';
-import pieces from '../components/JewelryDetails';
+import piecesnecklaces from '../components/JewelryDetailsNecklaces';
+import piecesbracelets from '../components/JewelryDetails';
 
 const JewelryListPage = () => {
   return (
     <>
-      <JewelryList pieces={pieces} />
+      <JewelryList 
+        piecesbracelets={piecesbracelets}
+        piecesnecklaces={piecesnecklaces} 
+      />
     </>
   )
 }

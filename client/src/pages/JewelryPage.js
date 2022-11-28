@@ -2,34 +2,34 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import NotFoundPage from './NotFoundPage';
-import trees from '../components/JewelryDetails'
+import pieces from '../components/JewelryDetails'
 
-const TreePage = () => {
-  const [treeInfo, setTreeInfo] = useState({ upvotes: 0, comments: []});
+const JewelryPage = () => {
+  const [jewelryInfo, setJewelryInfo] = useState({ upvotes: 0, comments: []});
 
   useEffect(() => {
-    const loadTreeInfo = async () => {
-      const response = await axios.get(`/api/trees/${treeId}`)
-      const newTreeInfo = response.data;
-      setTreeInfo(newTreeInfo);
+    const loadJewelryInfo = async () => {
+      const response = await axios.get(`/api/jewelry/${pieceId}`)
+      const newPieceInfo = response.data;
+      setJewelryInfo(newPieceInfo);
     }
-    loadTreeInfo();
+    loadJewelryInfo();
   }, []);
 
-  const { treeId } = useParams();
-  const tree = trees.find(tree => tree.name === treeId);
+  const { pieceId } = useParams();
+  const piece = pieces.find(piece => piece.name === pieceId);
 
-  if(!tree) {
+  if(!piece) {
     return <NotFoundPage />
   }
 
   return (
     <main>
-      <h1>{tree.title}</h1>
-      <p>This tree has {treeInfo.upvotes} upvote(s)</p>
-      {tree.content.map((p) => (<p key={tree.name}>{p}</p>))}
+      <h1>{piece.title}</h1>
+      <p>This piece has {jewelryInfo.upvotes} upvote(s)</p>
+      {piece.content.map((p) => (<p key={piece.name}>{p}</p>))}
     </main>
   );
 }
 
-export default TreePage;
+export default JewelryPage;

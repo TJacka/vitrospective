@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom';
 import NotFoundPage from './NotFoundPage';
-import singlebeads from '../components/SingleBeadDetails'
+import singlebeadswirl from '../components/SingleBeadSwirlDetails'
 
 const SingleBeadPage = () => {
   const { beadId } = useParams();
-  const bead = singlebeads.find(bead => bead.name === beadId);
+  const bead = singlebeadswirl.find(bead => bead.name === beadId);
 
   if(!bead) {
     return <NotFoundPage />

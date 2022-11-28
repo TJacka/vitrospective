@@ -15,7 +15,7 @@ const Navbar = () => {
 			  <li><Link class="navbar-li" to='/contact'>Contact</Link></li>
 			</ul>
 		  </div>
-		  <div class="navbar-nav">
+		  <div class="navbar-nav mx-3">
 			<Link class="navbar-li" to='/cart'>Cart</Link>
 			<Link class="navbar-li" to='/signup'>Signup</Link>
 		  </div>

@@ -1,4 +1,4 @@
-import Footer from "../components/Footer"
+import Button from 'react-bootstrap/Button';
 
 const HomePage = () => {
   return (
@@ -7,8 +7,8 @@ const HomePage = () => {
 		      <h1 className='hero-h1'>Artisan Glass Beads & Jewelry</h1>
 	        <h6 className="hero-sub">Exquisite unique pieces handmade from Italian Murano glass.</h6>
           <div className="hero-btns">
-            <button className='hero-btn'>Shop Beads</button>
-            <button className='hero-btn'>Shop Jewelry</button>
+            <Button className='hero-btn' variant="secondary">Shop Beads</Button>
+            <Button className='hero-btn' variant="dark" style={{backgroundColor:"black"}}>Shop Jewelry</Button>
           </div>
 	      </div>
       </div>
