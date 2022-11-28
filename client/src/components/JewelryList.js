@@ -3,7 +3,7 @@ import ProductCardJewelry from '../components/ProductCardJewelry'
 const JewelryList = ({ piecesbracelets, piecesnecklaces }) => {
   return (
     <div className="beads-container">
-      <h1>Jewelry Sets</h1>
+      <h1>Jewelry</h1>
       <div className="category-container" id="featured-3">
         <h3>Bracelets</h3>
         <hr/>

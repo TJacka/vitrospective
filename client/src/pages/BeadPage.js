@@ -1,10 +1,10 @@
 import { useParams } from 'react-router-dom';
 import NotFoundPage from './NotFoundPage';
-import singlebeadswirl from '../components/SingleBeadSwirlDetails'
+import beadsswirl from '../components/BeadSwirlDetails'
 
-const SingleBeadPage = () => {
+const BeadPage = () => {
   const { beadId } = useParams();
-  const bead = singlebeadswirl.find(bead => bead.name === beadId);
+  const bead = beadsswirl.find(bead => bead.name === beadId);
 
   if(!bead) {
     return <NotFoundPage />
@@ -18,4 +18,4 @@ const SingleBeadPage = () => {
   );
 }
 
-export default SingleBeadPage;
+export default BeadPage;

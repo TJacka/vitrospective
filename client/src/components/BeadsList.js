@@ -1,15 +1,15 @@
-import ProductCard from '../components/ProductCard'
+import ProductCardBeads from './ProductCardBeads'
 
-const SingleBeadsList = ({ singlebeadswirl, singlebeadfloral, singlebeadpendant }) => {
+const BeadsList = ({ beadsswirl, beadsfloral, beadspendant }) => {
   return (
     <div className="beads-container">
-      <h1>Single Beads</h1>
+      <h1>Beads</h1>
       <div className="category-container" id="featured-3">
         <h3>Swirls</h3>
         <hr/>
         <div className="product-category">
-          {singlebeadswirl.map(bead => (
-              <ProductCard className="product" key={bead.name} bead={bead} />
+          {beadsswirl.map(bead => (
+              <ProductCardBeads className="product" key={bead.name} bead={bead} />
           ))}
         </div>
       </div>
@@ -17,8 +17,8 @@ const SingleBeadsList = ({ singlebeadswirl, singlebeadfloral, singlebeadpendant 
         <h3>Florals</h3>
         <hr/>
         <div className="product-category">
-          {singlebeadfloral.map(bead => (
-              <ProductCard bead={bead} />            
+          {beadsfloral.map(bead => (
+              <ProductCardBeads bead={bead} />            
           ))}
         </div>
       </div>
@@ -26,8 +26,8 @@ const SingleBeadsList = ({ singlebeadswirl, singlebeadfloral, singlebeadpendant 
         <h3>Pendants</h3>
         <hr/>
         <div className="product-category">
-          {singlebeadpendant.map(bead => (
-              <ProductCard bead={bead} />
+          {beadspendant.map(bead => (
+              <ProductCardBeads bead={bead} />
           ))}
         </div>
 			</div>
@@ -35,4 +35,4 @@ const SingleBeadsList = ({ singlebeadswirl, singlebeadfloral, singlebeadpendant 
   )
 }
 
-export default SingleBeadsList
+export default BeadsList

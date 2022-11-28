@@ -1,14 +1,17 @@
-import React from 'react'
+import Button from 'react-bootstrap/Button';
+import CLOSEDBRACELET from '../images/5.png'
 
 const Contact = () => {
   return (
 	<div class="contact-container">
 		<div class="d-flex flex-column align-items-center mx-5 contact-description">
-			<h1 style={{ display:"none"}}>Vitrospective Glass Beads & Jewelry Contact Details</h1>
-			<p class="contact-details">Jewelry, beads & sets available online or via email or phone. Custom designs and sets available. Emerald, 3783 VIC.</p>
+			<h1 style={{ fontSize:"3rem", marginBottom: "30px", marginTop:"-60px" }}>Contact Vitrospective Glass Beads & Jewelry</h1>
+			<img src={CLOSEDBRACELET} width="400px" style={{marginBottom:"30px"}} alt="" />
+			<p class="contact-details">Jewelry & beads available online or via email or phone. <br /><br /> Emerald, 3783 VIC.</p>
+			<img src="" alt="" />
 			<div class="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-				<button type="email" class="hero-btn">Email</button>
-				<button type="phone" class="hero-btn">Phone: 0461949923</button>
+				<Button className='hero-btn' variant="secondary">Email</Button>
+            	<Button className='hero-btn' variant="dark" style={{backgroundColor:"black"}}>Phone</Button>
 			</div>
 		</div>
 	</div>
