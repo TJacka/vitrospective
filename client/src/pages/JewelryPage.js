@@ -10,8 +10,8 @@ const JewelryPage = () => {
   useEffect(() => {
     const loadJewelryInfo = async () => {
       const response = await axios.get(`/api/jewelry/${pieceId}`)
-      const newPieceInfo = response.data;
-      setJewelryInfo(newPieceInfo);
+      const pieceInfo = response.data;
+      setJewelryInfo(pieceInfo);
     }
     loadJewelryInfo();
   }, []);

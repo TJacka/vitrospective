@@ -4,13 +4,13 @@ import { db, connectToDb } from './db.js';
 const app = express();
 app.use(express.json());
 
-app.get('/api/jewelry/:name', async (req, res) => {
-	const { name } = req.params
+app.get('/api/beadsfloral/:title', async (req, res) => {
+	const { title } = req.params
 
-	const piece = await db.collection('jewelry').findOne({ name });
+	const bead = await db.collection('beadsfloral').findOne({ title });
 
-	if (piece) {
-		res.json(piece)
+	if (bead) {
+		res.json(bead)
 	} else {
 		res.sendStatus(404);
 	}

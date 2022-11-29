@@ -8,7 +8,7 @@ const ProductCard = ({ piece }) => {
   
   return (
 	<div className="product-card">
-    <h4 style={{textAlign:"center", fontSize:"1.1rem"}}>{piece.name}</h4>
+    <h4 style={{textAlign:"center", fontSize:"1.1rem"}}>{piece.title}</h4>
     <img src={piece.image} alt="bead sample" width="160px" />
     <span>{piece.color}</span>
     <span class="card-description">{piece.description}</span>
