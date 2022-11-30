@@ -28,6 +28,11 @@ const Cart = () => {
             <p className='total'>Total: ${total}</p>
             <button className='total btn btn-primary checkout-btn'>Checkout</button>
           </div>
+
+          <div className="text-center empty-cart">
+            <p>Your cart is empty!</p>
+            <p>You have not added any items to your cart.</p>
+          </div>
         </div>
     </div>
   )

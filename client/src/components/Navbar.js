@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 const Navbar = () => {
   return (
@@ -16,7 +17,7 @@ const Navbar = () => {
 			</ul>
 		  </div>
 		  <div class="navbar-nav mx-3">
-			<Link class="navbar-li" to='/cart'>Cart</Link>
+			<Link class="navbar-li" to='/cart'>Cart<AiOutlineShoppingCart style={{fontSize:"2rem", paddingBottom:"8px"}}/><sup className='cart-number'>7 </sup></Link>
 			<Link class="navbar-li" to='/signup'>Signup</Link>
 		  </div>
 		</div>
