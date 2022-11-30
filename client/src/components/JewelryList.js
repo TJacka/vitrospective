@@ -1,6 +1,6 @@
-import ProductCardJewelry from '../components/ProductCardJewelry'
+import ProductCard from './ProductCard'
 
-const JewelryList = ({ piecesbracelets, piecesnecklaces }) => {
+const JewelryList = ({ productList }) => {
   return (
     <div className="beads-container">
       <h1>Jewelry</h1>
@@ -8,8 +8,8 @@ const JewelryList = ({ piecesbracelets, piecesnecklaces }) => {
         <h3>Bracelets</h3>
         <hr/>
         <div className="product-category">
-          {piecesbracelets.map(piece => (
-              <ProductCardJewelry className="product" key={piece.name} piece={piece} />
+        {productList.map(product => ( product.type === "bracelet" ? 
+              <ProductCard className="product" key={product.id} product={product} /> : []
           ))}
         </div>
       </div>
@@ -17,8 +17,8 @@ const JewelryList = ({ piecesbracelets, piecesnecklaces }) => {
         <h3>Necklaces</h3>
         <hr/>
         <div className="product-category">
-          {piecesnecklaces.map(piece => (
-              <ProductCardJewelry key={piece.name} piece={piece} />            
+        {productList.map(product => ( product.type === "necklace" ? 
+              <ProductCard className="product" key={product.id} product={product} /> : []
           ))}
         </div>
       </div>

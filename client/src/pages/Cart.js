@@ -1,8 +1,12 @@
-import piecesbracelets from '../data/JewelryDetailsBracelets'
+import { useSelector, useDispatch } from 'react-redux'
 import { BsFillTrashFill } from 'react-icons/bs' 
+import productList from '../data/ProductList'
 
 const Cart = () => {
   
+  // const { cartProductIds } = useSelector((state) => state.cart)
+  // const cartProductData = productList.products.filter((product) => cartProductIds.includes(product.Id) )
+
   let total = 0
   
   return (
@@ -11,13 +15,13 @@ const Cart = () => {
       <hr/>
       <div className="category-container cart" id="featured-3">
           <div className="cart-products">
-              {piecesbracelets.map((piece) =>
-                <div key={piece.name} className="product">
-                  <img className="item-image" src={piece.image} alt="item image" style={{width:"250px"}} />
+              {productList.map((product) =>
+                <div key={product.name} className="product">
+                  <img className="item-image" src={product.image} alt="item image" style={{maxHeight:"100px"}} />
                   <div className='item-info'>
-                    <h5 style={{fontWeight:"bold"}}>{piece.title}</h5>
-                    <p style={{fontSize:"1rem"}}>${piece.price}.00</p>
-                    <button className='btn btn-primary cart-btn' style={{borderRadius:"8px", backgroundColor:'darkred', border: "none", fontSize:"0.9rem"}} >
+                    <h5 style={{fontWeight:"bold"}}>{product.title}</h5>
+                    <p style={{fontSize:"1rem"}}>${product.price}.00</p>
+                    <button className='btn btn-primary cart-btn' style={{borderRadius:"8px", backgroundColor:'darkred', border: "none", fontSize:"0.9rem", fontWeight:"bold"}} >
                       <BsFillTrashFill style={{paddingBottom:"1px"}} /> Remove Item
                     </button>
                   </div>

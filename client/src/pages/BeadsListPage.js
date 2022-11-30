@@ -1,7 +1,5 @@
 import BeadsList from '../components/BeadsList';
-import beadsswirl from '../data/BeadSwirlDetails';
-import beadsfloral from '../data/BeadFloralDetails';
-import beadspendant from '../data/BeadPendantDetails';
+import productList from '../data/ProductList';
 
 // import { useEffect } from 'react';
 // import { useParams } from 'react-router-dom';
@@ -22,14 +20,10 @@ const BeadsListPage = () => {
   // const { pieceId } = useParams();
   // const piece = pieceInfo.find(piece => piece.name === pieceId);
 
-
-
   return (
     <>
       <BeadsList 
-        beadsswirl={beadsswirl} 
-        beadsfloral={beadsfloral} 
-        beadspendant={beadspendant} 
+        productList={productList} 
       />
     </>
   )

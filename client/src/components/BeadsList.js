@@ -1,6 +1,6 @@
-import ProductCardBeads from './ProductCardBeads'
+import ProductCard from './ProductCard'
 
-const BeadsList = ({ beadsswirl, beadsfloral, beadspendant }) => {
+const BeadsList = ({ productList }) => {
   return (
     <div className="beads-container">
       <h1>Beads</h1>
@@ -8,8 +8,8 @@ const BeadsList = ({ beadsswirl, beadsfloral, beadspendant }) => {
         <h3>Swirls</h3>
         <hr/>
         <div className="product-category">
-          {beadsswirl.map(bead => (
-              <ProductCardBeads className="product" key={bead.name} bead={bead} beads={beadsswirl} />
+          {productList.map(product => ( product.type === "swirl" ? 
+              <ProductCard className="product" key={product.id} product={product} /> : []
           ))}
         </div>
       </div>
@@ -17,8 +17,8 @@ const BeadsList = ({ beadsswirl, beadsfloral, beadspendant }) => {
         <h3>Florals</h3>
         <hr/>
         <div className="product-category">
-          {beadsfloral.map(bead => (
-              <ProductCardBeads bead={bead} />            
+        {productList.map(product => ( product.type === "floral" ? 
+              <ProductCard className="product" key={product.id} product={product} /> : []
           ))}
         </div>
       </div>
@@ -26,8 +26,8 @@ const BeadsList = ({ beadsswirl, beadsfloral, beadspendant }) => {
         <h3>Pendants</h3>
         <hr/>
         <div className="product-category">
-          {beadspendant.map(bead => (
-              <ProductCardBeads bead={bead} />
+        {productList.map(product => ( product.type === "pendant" ? 
+              <ProductCard className="product" key={product.id} product={product} /> : []
           ))}
         </div>
 			</div>

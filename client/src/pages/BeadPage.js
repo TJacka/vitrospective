@@ -1,6 +1,5 @@
 import { useParams } from 'react-router-dom';
 import NotFoundPage from './NotFoundPage';
-import beadsswirl from '../data/BeadSwirlDetails'
 
 const BeadPage = () => {
   // const { beadId } = useParams();
