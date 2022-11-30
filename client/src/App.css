@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Niconne:wght@400;700&family=Alexandria:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne:wght@400;700&family=Open+Sans:wght@400;500;600;700&display=swap');
 
 body {
   font-family: 'Niconne', serif;
@@ -87,7 +87,6 @@ body {
 
 .hero-btn {
   padding: 12px 20px 11px;
-  margin: 0 10px;
   font-family: 'Alexandria', sans-serif;
   border-radius: 30px;
   border-top-style: 1px solid black;
@@ -99,12 +98,16 @@ body {
   background-color: rgb(95, 95, 95);
   color: white;
   cursor: pointer;
+  min-width: 150px;
+  height: 50px;
+  margin: 0 10px;
 }
 
 .hero-btns {
   display: flex;
   align-items: center;
-  margin: 0px auto 30px;
+  justify-content: start;
+  margin: 0px 23px 30px;
 }
 
 .hero {
@@ -136,7 +139,7 @@ body {
 
 .btn-dark {
   font-weight: 700;
-  margin: 0 -10px 0 0;
+
   padding: 6px 10px;
   border-radius: 8px;
 }
@@ -186,15 +189,6 @@ input, textarea {
   background-color: pink;
 }
 
-#add-comment-form button {
-  width: 320px;
-}
-
-#upvotes-section button, p {
-  display: inline-block;
-  margin-right: 16px;
-}
-
 .comment {
   border-bottom: 2px solid black;
   padding: 16px;
@@ -224,7 +218,15 @@ input, textarea {
   align-items: baseline;
   justify-content: space-between;
   font-weight: 700;
-  width: 84%;
+  width: 95%;
+}
+
+.price {
+  width: 80px;
+}
+
+.cartadd {
+  width: 100px;
 }
 
 .about-h1 {
@@ -244,7 +246,7 @@ input, textarea {
   text-align: center;
   font-family: 'Alexandria', sans-serif;
   font-size: 1.2rem;
-  line-height: 3rem;
+  line-height: 2rem;
   font-weight: 400;
   padding-right: 30px;
 }
@@ -262,7 +264,8 @@ input, textarea {
 }
 
 .about-img {
-  width: 20vw;
+  width: 80vw;
+  max-width: 600px;
   margin-bottom: -10px;
 }
 
@@ -343,6 +346,91 @@ footer {
   max-width: 800px;
 }
 
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80vw;
+  margin: 30px auto;
+}
+
+.cart-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(211, 210, 210);
+}
+
+.item-info {
+  font-family: 'Alexandria', sans-serif;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 300px;
+}
+
+.item-info p {
+  text-align: right;
+}
+
+.cart-btn {
+  width: 140px;
+}
+
+.checkout-btn {
+  font-family: 'Alexandria', sans-serif;
+  margin-top: 60px;
+  border-radius: 5px;
+}
+
+.total {
+  font-family: 'Alexandria', sans-serif;
+  margin-left: auto;
+  margin-top: 30px;
+}
+
+.checkout {
+  display: block;
+  text-align: right;
+  width: 100px;
+  margin-left: 50vw;
+}
+
+.signupform {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Open sans', serif;
+}
+
+.signup-container {
+  margin-top: -80px;
+}
+
+.signup-header {
+  width: 400px;
+  margin-bottom: 50px;
+}
+
+.signupform div {
+  width: 250px;
+}
+
+.about-container {
+  margin: 60px 0;
+  padding-top: 120px;
+}
+
+.about-details {
+  margin-top: 90px;
+}
+
 @media all and (min-width: 576px) and (max-width: 767px) {
   .hero-h1 {
     font-size: 6rem;
@@ -363,6 +451,8 @@ footer {
 
   .hero-btn {
     min-width: 150px;
+    height: 50px;
+    margin: 0 5px;
   }
 
   .hero-btns {
@@ -409,6 +499,8 @@ footer {
 
   .hero-btn {
     min-width: 150px;
+    height: 50px;
+    margin: 0 5px;
   }
 
   .hero-btns {
@@ -455,6 +547,8 @@ footer {
 
   .hero-btn {
     min-width: 150px;
+    height: 50px;
+    margin: 0 5px;
   }
 
   .hero-btns {
@@ -462,6 +556,18 @@ footer {
     align-items: center;
     justify-content: center;
     margin: 0px auto 30px;
+  }
+
+  .about-container {
+    width: 100%;
+  }
+
+  .about-details {
+    margin-top: 0px;
+  }
+
+  .about-img {
+    margin-top: -60px;
   }
 }
 
@@ -483,10 +589,10 @@ footer {
 
   .hero-h1 {
     font-size: 8rem;
-    line-height: 7rem;
+    line-height: 7.5rem;
     max-width: 900px;
     text-align: center;
-    margin: -30px auto 30px;
+    margin: 30px auto 30px;
     letter-spacing: -0.2rem;
   }
   
@@ -501,6 +607,8 @@ footer {
 
   .hero-btn {
     min-width: 150px;
+    height: 50px;
+    margin: 0 5px;
   }
 
   .hero-btns {
@@ -514,6 +622,14 @@ footer {
     display: flex;
     justify-content: space-between; 
     width: 80vw;
+  }
+
+  .about-details {
+    margin-top: 0px;
+  }
+
+  .about-img {
+    margin-top: -60px;
   }
 }
 
@@ -544,7 +660,7 @@ footer {
   }
   
   .hero-sub {
-    font-family: 'Alexandria', sans-serif;
+    font-family: 'Open sans', sans-serif;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
@@ -566,7 +682,7 @@ footer {
   }
 
   .about-container {
-    margin-left: -150px;
+    margin-left: -60px;
   }
 
   .product-category {
@@ -580,6 +696,14 @@ footer {
   .category-container {
     margin-top: 30px;
     width: 80vw;
+  }
+
+  .about-details {
+    margin-top: 0px;
+  }
+
+  .about-img {
+    margin-top: -60px;
   }
 }
 

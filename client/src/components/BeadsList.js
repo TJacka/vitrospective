@@ -9,7 +9,7 @@ const BeadsList = ({ beadsswirl, beadsfloral, beadspendant }) => {
         <hr/>
         <div className="product-category">
           {beadsswirl.map(bead => (
-              <ProductCardBeads className="product" key={bead.name} bead={bead} />
+              <ProductCardBeads className="product" key={bead.name} bead={bead} beads={beadsswirl} />
           ))}
         </div>
       </div>

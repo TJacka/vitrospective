@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import NotFoundPage from './NotFoundPage';
-import pieces from '../components/JewelryDetailsBracelets'
+import pieces from '../data/JewelryDetailsBracelets'
 
 const JewelryPage = () => {
   const [jewelryInfo, setJewelryInfo] = useState({ upvotes: 0, comments: []});

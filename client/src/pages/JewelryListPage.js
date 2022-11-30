@@ -1,6 +1,6 @@
 import JewelryList from '../components/JewelryList';
-import piecesnecklaces from '../components/JewelryDetailsNecklaces';
-import piecesbracelets from '../components/JewelryDetailsBracelets';
+import piecesnecklaces from '../data/JewelryDetailsNecklaces';
+import piecesbracelets from '../data/JewelryDetailsBracelets';
 
 const JewelryListPage = () => {
   return (
