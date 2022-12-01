@@ -22,7 +22,7 @@ function BasicExample() {
             <Form.Label style={{fontWeight:"600"}}>Retype Password</Form.Label>
             <Form.Control style={{fontSize:"0.9rem"}} type="retypepassword" placeholder="Retype Password" />
           </Form.Group>
-          <Button variant="primary" type="submit" style={{marginTop:"20px", width:"150px", fontWeight: "600", borderRadius:"8px"}}>
+          <Button variant="primary" type="submit" style={{marginTop:"20px", padding:"10px 10px", width:"150px", fontWeight: "600", borderRadius:"8px"}}>
             Submit
           </Button>
         </Form>
