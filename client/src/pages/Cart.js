@@ -22,11 +22,11 @@ const Cart = () => {
          <div className="cart-products">
               {cartProductData.map((product) =>
                 <div key={product.id} className="product">
-                  <img className="item-image" src={product.image} alt="item" style={{maxHeight:"100px"}} />
+                  <img className="item-image" src={product.image} alt="item" style={{maxHeight:"150px"}} />
                   <div className='item-info'>
                     <h5 style={{fontWeight:"bold"}}>{product.title}</h5>
                     <p style={{fontSize:"1rem"}}>${product.price}.00</p>
-                    <button className='btn btn-primary cart-btn' style={{borderRadius:"8px", backgroundColor:'darkred', border: "none", fontSize:"0.9rem", fontWeight:"bold", padding:"8px 0 9px"}} onClick={() => dispatch(removeFromCart(product.id))}>
+                    <button className='btn btn-primary cart-btn' style={{borderRadius:"7px", border: "none", fontSize:"0.9rem", fontWeight:"bold", padding:"8px 0 9px"}} onClick={() => dispatch(removeFromCart(product.id))}>
                       <BsFillTrashFill style={{paddingBottom:"1px"}} /> Remove Item
                     </button>
                   </div>
@@ -35,8 +35,8 @@ const Cart = () => {
           </div>
 
           <div className='checkout'>
-            <span style={{fontFamily:"Open sans", fontWeight:"bold"}}>Total: ${total}</span>
-            <button className='btn btn-primary checkout-btn' onClick={() => dispatch(clearAllItems())}>Checkout</button>
+            <span style={{fontFamily:"Open sans", fontWeight:"bold", marginRight:"5px"}}>Total: ${total}.00</span>
+            <button className='btn btn-primary checkout-btn' onClick={() => dispatch(clearAllItems())}>Payment & Checkout</button>
           </div>
         </div>)}
 

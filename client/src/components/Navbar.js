@@ -13,7 +13,7 @@ const Navbar = () => {
 		  	<Link to='/' className="nav-logo">Vitrospective</Link>
 		  </div>
 		  <div className="">
-			<ul className="navbar-nav">
+			<ul className="navbar-nav" style={{marginLeft:"70px"}}>
 			  <li><Link className="navbar-li" to='/about'>About</Link></li>
 			  <li><Link className="navbar-li" to='/beads'>Beads</Link></li>
 			  <li><Link className="navbar-li" to='/jewelry'>Jewelry</Link></li>

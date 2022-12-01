@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
     <span>{product.color}</span>
     <span className="card-description">{product.description}</span>
     <div className="card-price">
-      <Button className="cartadd" variant="secondary" style={{fontSize:"0.9rem", padding: "9px 6px 9px", color: "white", textShadow:"0 0 20px dark"}} onClick={() => dispatch(addToCart(product.id))} >Add to cart</Button>
+      <Button className="cart-add" variant="secondary" style={{fontSize:"0.9rem", padding: "7px 6px 7px", color: "white", textShadow:"0 0 20px dark"}} onClick={() => dispatch(addToCart(product.id))} >Add to cart</Button>
       <div className='price' style={{textAlign:"left"}}>
         <p style={{color: "darkred", marginTop:"4px", fontWeight:"bold"}}>Price:</p>
         <p style={{fontWeight:"bold"}}>${product.price}.00</p>
