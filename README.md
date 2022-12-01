@@ -4,7 +4,7 @@
 
 <br>
 
-**Link to live project:** https://tjacka.github.io/Vitrospective/
+**Link to live project:** https://tjacka.github.io/vitrospective/
 
 <br>
 
