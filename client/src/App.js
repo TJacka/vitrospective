@@ -26,15 +26,15 @@ function App() {
         </div>
         <div className='page-body'>
           <Routes>
-            <Route path='/reactecommercestore/' element={<Home />} />
-            <Route path='/reactecommercestore/about' element={<About />} />
-            <Route path='/reactecommercestore/jewelry' element={<JewelryListPage />} />
-            <Route path='/reactecommercestore/jewelry/:pieceId' element={<JewelryPage />} />
-            <Route path='/reactecommercestore/beads' element={<BeadsListPage />} />
-            <Route path='/reactecommercestore/beads/:beadId' element={<BeadPage />} />
-            <Route path='/reactecommercestore/contact' element={<Contact />} />
-            <Route path='/reactecommercestore/cart' element={<Cart />} />
-            <Route path='/reactecommercestore/signup' element={<Profile />} />
+            <Route path='/vitrospective/' element={<Home />} />
+            <Route path='/vitrospective/about' element={<About />} />
+            <Route path='/vitrospective/jewelry' element={<JewelryListPage />} />
+            <Route path='/vitrospective/jewelry/:pieceId' element={<JewelryPage />} />
+            <Route path='/vitrospective/beads' element={<BeadsListPage />} />
+            <Route path='/vitrospective/beads/:beadId' element={<BeadPage />} />
+            <Route path='/vitrospective/contact' element={<Contact />} />
+            <Route path='/vitrospective/cart' element={<Cart />} />
+            <Route path='/vitrospective/signup' element={<Profile />} />
             <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </div>

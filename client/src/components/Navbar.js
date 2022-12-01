@@ -10,19 +10,19 @@ const Navbar = () => {
 	<nav className="navbar navbar-expand-lg" style={{ boxShadow: "0 0 30px silver" }} aria-label="Vitrospective navbar">
 		<div className="container-fluid mx-5-lg smallreverse">
 		  <div>
-		  	<Link to='/reactecommercestore/' className="nav-logo">Vitrospective</Link>
+		  	<Link to='/vitrospective/' className="nav-logo">Vitrospective</Link>
 		  </div>
 		  <div className="">
 			<ul className="navbar-nav" style={{marginLeft:"70px"}}>
-			  <li><Link className="navbar-li" to='/reactecommercestore/about/'>About</Link></li>
-			  <li><Link className="navbar-li" to='/reactecommercestore/beads/'>Beads</Link></li>
-			  <li><Link className="navbar-li" to='/reactecommercestore/jewelry/'>Jewelry</Link></li>
-			  <li><Link className="navbar-li" to='/reactecommercestore/contact/'>Contact</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/about/'>About</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/beads/'>Beads</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/jewelry/'>Jewelry</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/contact/'>Contact</Link></li>
 			</ul>
 		  </div>
 		  <div className="navbar-nav mx-3">
-			<Link className="navbar-li" to='/reactecommercestore/cart/'>Cart<AiOutlineShoppingCart style={{fontSize:"2rem", paddingBottom:"8px"}}/><sup className='cart-number' style={{fontWeight:"bold"}}>{cartProductIds.length} </sup></Link>
-			<Link className="navbar-li" to='/reactecommercestore/signup/'>Signup</Link>
+			<Link className="navbar-li" to='/vitrospective/cart/'>Cart<AiOutlineShoppingCart style={{fontSize:"2rem", paddingBottom:"8px"}}/><sup className='cart-number' style={{fontWeight:"bold"}}>{cartProductIds.length} </sup></Link>
+			<Link className="navbar-li" to='/vitrospective/signup/'>Signup</Link>
 		  </div>
 		</div>
 	  </nav>
