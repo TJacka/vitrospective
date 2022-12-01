@@ -1,4 +1,5 @@
 import Button from 'react-bootstrap/Button';
+import { Link } from 'react-router-dom'
 
 const HomePage = () => {
   return (
@@ -7,8 +8,8 @@ const HomePage = () => {
 		      <h1 className='hero-h1'>Artisan Glass Beads & Jewelry</h1>
 	        <h6 className="hero-sub">Exquisite unique pieces handmade from Italian Murano glass.</h6>
           <div className="hero-btns">
-            <Button href="/beads/" className='hero-btn' variant="secondary">Shop Beads</Button>
-            <Button href="/jewelry/" className='hero-btn' variant="dark" style={{backgroundColor:"black", paddingTop: "12px"}}>Shop Jewelry</Button>
+            <Link className="hero-btn" variant="secondary" to='/vitrospective/beads/'>Shop Beads</Link>
+			      <Link className="hero-btn" to='/vitrospective/jewelry/' variant="dark">Shop Jewelry</Link>
           </div>
 	      </div>
       </div>
