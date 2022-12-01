@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/vitrospective/static/css/main.d726c135.css",
-    "main.js": "/vitrospective/static/js/main.bfb79f1c.js",
+    "main.css": "/vitrospective/static/css/main.b48a3591.css",
+    "main.js": "/vitrospective/static/js/main.c3b2cd78.js",
     "static/js/787.6ae152c5.chunk.js": "/vitrospective/static/js/787.6ae152c5.chunk.js",
     "static/media/4.png": "/vitrospective/static/media/4.f7b430c655388f68f53f.png",
     "static/media/5.png": "/vitrospective/static/media/5.dfdc3418f0a94cb88732.png",
     "static/media/lampworking.png": "/vitrospective/static/media/lampworking.c94f5c651330c10aa05a.png",
     "static/media/about.png": "/vitrospective/static/media/about.bb6b101c5f83197f2591.png",
     "index.html": "/vitrospective/index.html",
-    "main.d726c135.css.map": "/vitrospective/static/css/main.d726c135.css.map",
-    "main.bfb79f1c.js.map": "/vitrospective/static/js/main.bfb79f1c.js.map",
+    "main.b48a3591.css.map": "/vitrospective/static/css/main.b48a3591.css.map",
+    "main.c3b2cd78.js.map": "/vitrospective/static/js/main.c3b2cd78.js.map",
     "787.6ae152c5.chunk.js.map": "/vitrospective/static/js/787.6ae152c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d726c135.css",
-    "static/js/main.bfb79f1c.js"
+    "static/css/main.b48a3591.css",
+    "static/js/main.c3b2cd78.js"
   ]
 }
