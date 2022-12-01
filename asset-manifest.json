@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/reactecommercestore/static/css/main.d726c135.css",
-    "main.js": "/reactecommercestore/static/js/main.18a2ca00.js",
-    "static/js/787.403c0e7c.chunk.js": "/reactecommercestore/static/js/787.403c0e7c.chunk.js",
+    "main.js": "/reactecommercestore/static/js/main.bdce7b94.js",
+    "static/js/787.ec055999.chunk.js": "/reactecommercestore/static/js/787.ec055999.chunk.js",
     "static/media/4.png": "/reactecommercestore/static/media/4.f7b430c655388f68f53f.png",
     "static/media/5.png": "/reactecommercestore/static/media/5.dfdc3418f0a94cb88732.png",
     "static/media/lampworking.png": "/reactecommercestore/static/media/lampworking.c94f5c651330c10aa05a.png",
     "static/media/about.png": "/reactecommercestore/static/media/about.bb6b101c5f83197f2591.png",
     "index.html": "/reactecommercestore/index.html",
     "main.d726c135.css.map": "/reactecommercestore/static/css/main.d726c135.css.map",
-    "main.18a2ca00.js.map": "/reactecommercestore/static/js/main.18a2ca00.js.map",
-    "787.403c0e7c.chunk.js.map": "/reactecommercestore/static/js/787.403c0e7c.chunk.js.map"
+    "main.bdce7b94.js.map": "/reactecommercestore/static/js/main.bdce7b94.js.map",
+    "787.ec055999.chunk.js.map": "/reactecommercestore/static/js/787.ec055999.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d726c135.css",
-    "static/js/main.18a2ca00.js"
+    "static/js/main.bdce7b94.js"
   ]
 }
