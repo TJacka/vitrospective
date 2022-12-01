@@ -26,15 +26,15 @@ function App() {
         </div>
         <div className='page-body'>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/jewelry' element={<JewelryListPage />} />
-            <Route path='/jewelry/:pieceId' element={<JewelryPage />} />
-            <Route path='/beads' element={<BeadsListPage />} />
-            <Route path='/beads/:beadId' element={<BeadPage />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='/signup' element={<Profile />} />
+            <Route path='/reactecommercestore/' element={<Home />} />
+            <Route path='/reactecommercestore/about' element={<About />} />
+            <Route path='/reactecommercestore/jewelry' element={<JewelryListPage />} />
+            <Route path='/reactecommercestore/jewelry/:pieceId' element={<JewelryPage />} />
+            <Route path='/reactecommercestore/beads' element={<BeadsListPage />} />
+            <Route path='/reactecommercestore/beads/:beadId' element={<BeadPage />} />
+            <Route path='/reactecommercestore/contact' element={<Contact />} />
+            <Route path='/reactecommercestore/cart' element={<Cart />} />
+            <Route path='/reactecommercestore/signup' element={<Profile />} />
             <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </div>
