@@ -1,5 +1,5 @@
 import JewelryList from '../components/JewelryList';
-import productList from '../data/ProductList';
+import productList from '../data/productList';
 
 const JewelryListPage = () => {
   return (

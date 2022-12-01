@@ -1,5 +1,5 @@
 import BeadsList from '../components/BeadsList';
-import productList from '../data/ProductList';
+import productList from '../data/productList';
 
 // import { useEffect } from 'react';
 // import { useParams } from 'react-router-dom';

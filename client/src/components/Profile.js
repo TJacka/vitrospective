@@ -18,9 +18,9 @@ function BasicExample() {
             <Form.Label style={{fontWeight:"600"}}>Password</Form.Label>
             <Form.Control style={{fontSize:"0.9rem"}} type="password" placeholder="Password" />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicPassword">
+          <Form.Group className="mb-3" controlId="formBasicPasswordcheck">
             <Form.Label style={{fontWeight:"600"}}>Retype Password</Form.Label>
-            <Form.Control style={{fontSize:"0.9rem"}} type="password" placeholder="Password" />
+            <Form.Control style={{fontSize:"0.9rem"}} type="retypepassword" placeholder="Retype Password" />
           </Form.Group>
           <Button variant="primary" type="submit" style={{marginTop:"20px", width:"150px", fontWeight: "600"}}>
             Submit

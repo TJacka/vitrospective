@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 const HomePage = () => {
   return (
       <div>
-        <div class="pb-5">
+        <div className="pb-5">
 		      <h1 className='hero-h1'>Artisan Glass Beads & Jewelry</h1>
 	        <h6 className="hero-sub">Exquisite unique pieces handmade from Italian Murano glass.</h6>
           <div className="hero-btns">
