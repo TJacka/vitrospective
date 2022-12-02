@@ -169,7 +169,7 @@ body {
 }
 
 .contact-btn {
-  padding: 10px 10px 10px;
+  padding: 9px 10px 10px;
   text-decoration: none;
   font-family: 'Open sans', sans-serif;
   border-radius: 7px;
@@ -229,7 +229,7 @@ input, textarea {
   margin-bottom: -3px;
   margin-right: 8px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   align-items: start;
   justify-content: space-between;
   width: 85%;
@@ -237,10 +237,9 @@ input, textarea {
 }
 
 .cart-add {
-  width: 105px;
   font-size: 0.9rem;
   font-weight: 700;
-  padding: 8px 6px 8px;
+  padding: 8px 15px 8px;
   color: white;
   text-shadow: 0 0 20px dark;
   background-color: rgb(95, 95, 95);

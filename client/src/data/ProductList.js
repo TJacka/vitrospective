@@ -46,7 +46,7 @@ const productList = [
         id: '7',
         type: "floral",
         title: 'Pink Flower Trio',
-        image: 'https://i.ibb.co/BVbQ29N/31.png',
+        image: 'https://i.ibb.co/RCMSDPW/Copy-of-Untitled-600-400-px-300-200-px.png',
         description: 'Pinks & white flower trio round bead.',
         price: 10.00,
     }, {
