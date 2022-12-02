@@ -26,7 +26,7 @@ const Cart = () => {
                   <div className='item-info'>
                     <h5 style={{fontWeight:"bold"}}>{product.title}</h5>
                     <p style={{fontSize:"1rem"}}>${product.price}.00</p>
-                    <button className='btn btn-primary cart-btn' style={{borderRadius:"7px", border: "none", fontSize:"0.9rem", fontWeight:"bold", padding:"8px 0 9px"}} onClick={() => dispatch(removeFromCart(product.id))}>
+                    <button className='cart-btn' onClick={() => dispatch(removeFromCart(product.id))}>
                       <BsFillTrashFill style={{paddingBottom:"1px"}} /> Remove Item
                     </button>
                   </div>

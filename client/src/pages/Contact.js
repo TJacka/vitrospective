@@ -10,8 +10,8 @@ const Contact = () => {
 			<p className="contact-details">Jewelry & beads available online or via email or phone. <br /><br /> Emerald, 3783 VIC.</p>
 			<img src="" alt="" />
 			<div className="d-grid gap-2 d-md-flex justify-content-md-start mt-4">
-				<Button className='hero-btn' variant="secondary">Email</Button>
-            	<Button className='hero-btn' variant="dark" style={{backgroundColor:"black"}}>Phone</Button>
+				<button className='contact-btn'>Email</button>
+            	<button className='contact-btn'>Phone</button>
 			</div>
 		</div>
 	</div>
