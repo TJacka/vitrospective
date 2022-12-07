@@ -14,15 +14,15 @@ const Navbar = () => {
 		  </div>
 		  <div className="">
 			<ul className="navbar-nav" style={{marginLeft:"70px"}}>
-			  <li><Link className="navbar-li" to='/vitrospective/about/' onClick={() => {window.location.href="/vitrospective/about/"}}>About</Link></li>
-			  <li><Link className="navbar-li" to='/vitrospective/beads/' onClick={() => {window.location.href="/vitrospective/beads/"}}>Beads</Link></li>
-			  <li><Link className="navbar-li" to='/vitrospective/jewelry/' onClick={() => {window.location.href="/vitrospective/jewelry/"}}>Jewelry</Link></li>
-			  <li><Link className="navbar-li" to='/vitrospective/contact/' onClick={() => {window.location.href="/vitrospective/contact/"}}>Contact</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/about/'>About</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/beads/'>Beads</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/jewelry/'>Jewelry</Link></li>
+			  <li><Link className="navbar-li" to='/vitrospective/contact/'>Contact</Link></li>
 			</ul>
 		  </div>
 		  <div className="navbar-nav mx-3">
-			<Link className="navbar-li" to='/vitrospective/cart/' onClick={() => {window.location.href="/vitrospective/cart/"}}>Cart<AiOutlineShoppingCart style={{fontSize:"2rem", paddingBottom:"8px"}}/><sup className='cart-number' style={{fontWeight:"bold"}}>{cartProductIds.length} </sup></Link>
-			<Link className="navbar-li" to='/vitrospective/signup/' onClick={() => {window.location.href="/vitrospective/signup/"}}>Signup</Link>
+			<Link className="navbar-li" to='/vitrospective/cart/'>Cart<AiOutlineShoppingCart style={{fontSize:"2rem", paddingBottom:"8px"}}/><sup className='cart-number' style={{fontWeight:"bold"}}>{cartProductIds.length} </sup></Link>
+			<Link className="navbar-li" to='/vitrospective/signup/'>Signup</Link>
 		  </div>
 		</div>
 	  </nav>
