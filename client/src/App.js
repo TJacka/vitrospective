@@ -16,7 +16,7 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <BrowserRouter basename='/vitrospective'>
+    <BrowserRouter>
       <div className='app'>
         <div className='nav-lg'>
           <Navbar />
