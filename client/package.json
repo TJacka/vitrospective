@@ -1,7 +1,7 @@
 {
   "name": "vitrospective",
   "version": "0.1.0",
-  "homepage": "https://tjacka.github.io/vitrospective/",
+  "homepage": "https://tjacka.github.io/vitrospective",
   "private": true,
   "proxy": "http://localhost:8000/",
   "dependencies": {
