@@ -16,7 +16,7 @@ import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/'>
       <div className='app'>
         <div className='nav-lg'>
           <Navbar />
@@ -26,15 +26,15 @@ function App() {
         </div>
         <div className='page-body'>
           <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/about' element={<About />} />
-            <Route path='/jewelry' element={<JewelryListPage />} />
-            <Route path='/jewelry/:pieceId' element={<JewelryPage />} />
-            <Route path='/beads' element={<BeadsListPage />} />
-            <Route path='/beads/:beadId' element={<BeadPage />} />
-            <Route path='/contact' element={<Contact />} />
-            <Route path='/cart' element={<Cart />} />
-            <Route path='/signup' element={<Profile />} />
+            <Route path='/vitrospective/' element={<Home />} />
+            <Route path='/vitrospective/about' element={<About />} />
+            <Route path='/vitrospective/jewelry' element={<JewelryListPage />} />
+            <Route path='/vitrospective/jewelry/:pieceId' element={<JewelryPage />} />
+            <Route path='/vitrospective/beads' element={<BeadsListPage />} />
+            <Route path='/vitrospective/beads/:beadId' element={<BeadPage />} />
+            <Route path='/vitrospective/contact' element={<Contact />} />
+            <Route path='/vitrospective/cart' element={<Cart />} />
+            <Route path='/vitrospective/signup' element={<Profile />} />
             <Route path='*' element={<NotFoundPage />} />
           </Routes>
         </div>
